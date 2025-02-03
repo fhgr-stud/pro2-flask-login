@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <form action="{{ url_for('login') }}" method="post">
+        <p class="error">{{ message }}</p>
+        <p><input type="text" name="email" placeholder="E-Mail"></p>
+        <p><input type="password" name="password" placeholder="Passwort"></p>
+        <p><input type="submit" value="Login"></p>
+    </form>
+
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</body>
+
+</html>
